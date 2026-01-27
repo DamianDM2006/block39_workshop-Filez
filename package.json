@@ -19,10 +19,25 @@
     "pg": "^8.14.1"
   },
   "devDependencies": {
+    "@faker-js/faker": "^10.2.0",
     "supertest": "^7.1.0",
     "vitest": "^3.1.2"
   },
   "engines": {
     "node": ">=22"
-  }
+  },
+  "version": "1.0.0",
+  "description": "Filez is a next-gen file management platform built for extreme speed and performance. Your folders and files have never felt snappier!",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamianDM2006/block39_workshop-Filez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamianDM2006/block39_workshop-Filez/issues"
+  },
+  "homepage": "https://github.com/DamianDM2006/block39_workshop-Filez#readme"
 }

@@ -1,4 +1,5 @@
 import db from "#db/client";
+import { faker } from `@faker-js/faker`;
 
 await db.connect();
 await seed();
