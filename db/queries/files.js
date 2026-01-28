@@ -1,6 +1,6 @@
 import db from "../client.js";
 
-export const createFile = async ({ fileName, size, folderId }) => {
+export const createFile = async (fileName, size, folderId) => {
   try {
     const sql = `
     INSERT INTO files (name, size, folder_id)

@@ -25,3 +25,23 @@ export const getAllFolders = async () => {
     console.log(`ERROR Getting All Folders.`, err);
   }
 };
+
+export const getSpecificFolderWithFiles = async (id) => {
+  try {
+    const sql = `
+      SELECT
+        *,
+        (
+          SELECT json_agg(files)
+          FROM files
+          WHERE files.folder_id = folders.id
+        ) AS files
+      FROM folders
+      WHERE id = ${id}
+    `;
+    const { rows: [folder] } = await db.query(sql);
+    return folder;
+  } catch(err) {
+    console.log(`ERROR Getting Specific Folder`, err);
+  }
+};
