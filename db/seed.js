@@ -1,5 +1,4 @@
 import db from "#db/client";
-// import { faker } from `@faker-js/faker`;
 import { createFolder } from "./queries/folders.js";
 import { createFile } from "./queries/files.js";
 
