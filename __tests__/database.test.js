@@ -36,7 +36,7 @@ describe("Database schema", () => {
     );
   });
 
-  test(`unique constraint on "name" and "folder_id" column of "files"`, async () => {
+  test(`unique constraint on "name" column of "files"`, async () => {
     const isNameUnique = await isColumnConstrained("files", "name", "unique");
     expect(isNameUnique).toBe(true);
 
