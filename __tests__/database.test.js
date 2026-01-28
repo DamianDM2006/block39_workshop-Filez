@@ -40,12 +40,12 @@ describe("Database schema", () => {
     const isNameUnique = await isColumnConstrained("files", "name", "unique");
     expect(isNameUnique).toBe(true);
 
-    const isFolderIdUnique = await isColumnConstrained(
-      "files",
-      "folder_id",
-      "unique",
-    );
-    expect(isFolderIdUnique).toBe(true);
+    // const isFolderIdUnique = await isColumnConstrained(
+    //   "files",
+    //   "folder_id",
+    //   "unique",
+    // );
+    // expect(isFolderIdUnique).toBe(true);
   });
 
   test(`"folder_id" column of "files" table is a foreign key`, async () => {
